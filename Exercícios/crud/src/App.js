@@ -46,7 +46,7 @@ function App() {
     const newList =  todoList.map((task) => {
 
       if (task.id === id) {
-        return {...task, completed: true}
+        return {...task, completed: !task.completed}
       }else {
         return task
       }
@@ -59,16 +59,16 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App m-auto flex flex-col flex-wrap content-center p-10">
       
-      <div className="addTask">
+      <div className="addTask basis-1/2 w-1/2 m-auto flex flex-wrap">
 
-        <input placeholder="Task..." onChange={handleChange} />
-        <button onClick={addTask}>Add Task</button>
+        <input placeholder="Task..." onChange={handleChange} className='w-10/12 basis-4/5 p-4 break-words border border-gray-500 rounded-md rounded-r-none' />
+        <button onClick={addTask} className='w-1/6 basis-1/5 border border-gray-500 rounded-md rounded-l-none bg-blue-500 text-white' >Add Task</button>
 
       </div>
 
-      <div className="list">
+      <div className="list p-5 flex flex-col">
         
         {todoList.map((taskObj) => {
 
