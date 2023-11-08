@@ -19,7 +19,8 @@ export default function Navbar() {
         <nav>
 
             <Link to='/'>Home</Link>
-            <Link to='/login'>Login</Link>
+            {!user ? <Link to='/login'>Login</Link> :
+            <Link to='/createpost'>Create post</Link>}
             
             <div>
                 {user && <>

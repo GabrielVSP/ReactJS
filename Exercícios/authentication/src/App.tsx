@@ -3,8 +3,9 @@ import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Main from './pages/main';
+import Main from './pages/main/main';
 import Login from './pages/login';
+import Createpost from './pages/createpost/createpost';
 import Navbar from './components/navbar';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
           <Route path='/'  element={<Main />}/>
           <Route path='/login'  element={<Login />}/>
+          <Route path='/createpost'  element={<Createpost />}/>
 
         </Routes>
 
