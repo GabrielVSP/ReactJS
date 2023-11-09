@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css'
 import { Link } from "react-router-dom"
 import { auth } from '../config/firebase';
 import { signOut } from 'firebase/auth';
@@ -16,10 +17,11 @@ export default function Navbar() {
 
     return (
 
-        <nav>
+        <nav className="bg-black flex">
 
             <Link to='/'>Home</Link>
-            <Link to='/login'>Login</Link>
+            {!user ? <Link to='/login'>Login</Link> :
+            <Link to='/createpost'>Create post</Link>}
             
             <div>
                 {user && <>
