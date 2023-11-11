@@ -17,10 +17,10 @@ export default function Login() {
 
     return (
 
-        <section>
+        <section className='text-center text-white'>
             
-            <h1>Sign-in to continue</h1>
-            <button onClick={login}>Sign in</button>
+            <h1 className='text-2xl mt-3'>Sign-in to continue</h1>
+            <button className="w-1/3 mt-1 p-1 text-lg bg-purple-400 md:w-1/12" onClick={login}>Sign in</button>
 
         </section>
 

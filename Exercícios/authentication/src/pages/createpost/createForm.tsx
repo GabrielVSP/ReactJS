@@ -44,19 +44,19 @@ export default function CreateForm() {
 
     return (
 
-        <form method="post" onSubmit={handleSubmit(onCreate)}>
+        <form className="mt-3 flex flex-col items-center justify-center" method="post" onSubmit={handleSubmit(onCreate)}>
 
-            <div>
-                <input type="text" placeholder="Title" {...register('title')} />
+            <div className="w-2/3 my-2  md:w-1/3">
+                <input className="w-full border border-slate-600 rounded-md p-1" type="text" placeholder="Title" {...register('title')} />
                 <p>{errors.title?.message}</p>
             </div>
 
-            <div>
-                <textarea id="content" placeholder='Content' {...register('content')}></textarea>
+            <div className="w-2/3 my-2 md:w-1/3">
+                <textarea className="w-full h-32 border border-slate-600 rounded-md p-1" id="content" placeholder='Content' {...register('content')}></textarea>
                 <p>{errors.content?.message}</p>
             </div>
 
-            <input type='submit' />
+            <input className="w-1/3 p-1 bg-purple-500 text-white cursor-pointer" type='submit' />
 
         </form>
 

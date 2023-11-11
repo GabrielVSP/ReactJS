@@ -78,20 +78,27 @@ export default function Post(props: Props) {
 
     return (
 
-        <div>
+        <div className='w-10/12 p-2 mt-3 rounded-lg text-white md:w-2/3' style={{backgroundColor: '#1a2235'}}>
 
-            <h2>{ post.title }</h2>
+            <h2 className='text-3xl'>{ post.title }</h2>
 
-            <p>
+            <p className='my-3 text-lg indent-2'>
                 {post.content}
             </p>
 
-            <aside>
-                @{post.author}
+            <div>
                 <button onClick={userLiked ? removeLike : addLike}>
-                    {userLiked ? 'Unlike' : 'Like'}
+                    <span className="relative top-1 p-1 material-symbols-outlined" style={{color: userLiked ? '#8b5cf6' : 'white'}}>
+                        {/*userLiked ? 'thumb_down' : 'thumb_up'*/}
+                        thumb_up
+                    </span>
+                    
                 </button>
-                {likes && <span>Likes: {likes.length}</span>}
+                {likes && <span>{likes.length}</span>}
+            </div>
+
+            <aside className='font-bold mt-2'>
+                @{post.author}
             </aside>
 
         </div>

@@ -37,7 +37,7 @@ export default function Main() {
 
     return (
 
-        <section>
+        <section className='flex flex-col justify-center items-center'>
             
             {postList?.map((post, key) => <Post post={post} key={key}/> )}
 

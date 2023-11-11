@@ -17,21 +17,27 @@ export default function Navbar() {
 
     return (
 
-        <nav className="bg-black flex">
+        <header>
+        
+            <nav className="flex p-2 justify-between items-center bg-purple-700 text-white text-lg md:justify-around">
 
-            <Link to='/'>Home</Link>
-            {!user ? <Link to='/login'>Login</Link> :
-            <Link to='/createpost'>Create post</Link>}
-            
-            <div>
-                {user && <>
-                    <p>{ user?.displayName }</p>
-                    <img src={user?.photoURL || ''} alt="Profile" width="100" height="100"/>
-                    <button onClick={logout}>Logout</button>
-                </>}
-            </div>
+                <div className='flex justify-evenly'>
+                    <Link className="p-1 hover:text-xl" to='/'>Home</Link>
+                    {!user ? <Link className="p-1 hover:text-xl" to='/login'>Login</Link> :
+                    <Link className="p-1 hover:text-xl" to='/createpost'>Create post</Link>}
+                </div>
+                
+                <div className="flex justify-around items-center">
+                    {user && <>
+                        <img className='w-1/4 rounded-full ' src={user?.photoURL || ''} alt="Profile" />
+                        <div className='w-1 h-4 bg-purple-900'></div>
+                        <button onClick={logout}>Logout</button>
+                    </>}
+                </div>
 
-        </nav>
+            </nav>
+
+        </header>
 
     )
 
