@@ -1,0 +1,49 @@
+@import '../Variables/variables.scss';
+
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: $bodyFont;
+
+    h1 {
+
+        text-decoration: dashed;
+
+        strong {
+
+            color: $cyan;
+
+        }
+
+    }
+
+    h1:hover {
+
+        color: $cyan;
+
+        strong {
+
+            color: black;
+
+        }
+
+        transition: 0.3s;
+
+    }
+
+    button {
+
+        @include buttonStyle($cyan, 1.2em);
+
+    }
+
+}
+
+button {
+
+    @include buttonStyle($red, 2em);
+
+}

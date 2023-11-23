@@ -1,0 +1,29 @@
+//Colors
+
+$neutral: rgb(38, 38, 38);
+$white: rgb(236, 236, 236);
+$red: rgb(220, 40, 40);
+$cyan: rgb(8, 142, 176);
+
+//Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+$titleFont: Roboto;
+$bodyFont: 'Arial', sans-serif;
+
+//Mixin
+
+@mixin buttonStyle($color, $size) {
+
+    width: 100px;
+    height: 40px;
+
+    color: $color;
+    font-size: $size;
+
+    border: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+}

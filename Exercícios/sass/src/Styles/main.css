@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+main h1 {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+}
+main h1 strong {
+  color: rgb(8, 142, 176);
+}
+main h1:hover {
+  color: rgb(8, 142, 176);
+  transition: 0.3s;
+}
+main h1:hover strong {
+  color: black;
+}
+main button {
+  width: 100px;
+  height: 40px;
+  color: rgb(8, 142, 176);
+  font-size: 1.2em;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  color: rgb(220, 40, 40);
+  font-size: 2em;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */
