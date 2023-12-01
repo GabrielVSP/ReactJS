@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import { Provider } from 'react-redux';
 import { store } from './store';
 
-
 import Home from './pages/home';
 import Contact from './pages/contact';
 import Login from './pages/login';
@@ -14,9 +13,8 @@ function App() {
   return (
 
     <div className="App">
-
       
-      <Provider store={store}>
+      <Provider store={store}> 
         <Router>
 
           <Link to="/">Home</Link>
