@@ -28,7 +28,6 @@ export default function Navbar() {
                     {!user ? <Link className="p-1 hover:text-xl" to='/login'>Login</Link> :
                     <Link className="p-1 hover:text-xl" to='/createpost'>Create post</Link>}
 
-                    botoes
                 </div>
                 
                 <div className="flex justify-around items-center">
@@ -37,11 +36,10 @@ export default function Navbar() {
                         <div className='w-1 h-4 bg-purple-900'></div>
                         <button onClick={logout}>Logout</button>
                     </>}
-                    user
                 </div>
 
-                <div onClick={() => navigate('/')}>test</div>
-                <div onClick={() => navigate('/createpost')}>crea</div>
+                {/* <div onClick={() => navigate('/')}>test</div>
+                <div onClick={() => navigate('/createpost')}>crea</div> */}
 
             </nav>
 
