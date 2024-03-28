@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Oswald:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+
+}
+
+html, body {
+
+    height: 100%;
+    background: rgb(43, 28, 48);
+
+}
+
+#root {
+
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    background: rgb(43, 26, 49);
+  
+}
+
+header h1 {
+
+    font-size: 1.3em;
+    font-weight: normal;
+    color: rgb(241, 186, 255);
+
+}
+
+header button {
+
+    background: transparent;
+    color: white;
+
+    border: 0;
+    outline: 0;
+    padding: 6px;
+
+    border-bottom: 1px solid white;
+
+    font-size: 1.3em;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+header button:hover {
+
+    color: rgb(241, 186, 255);
+    font-size: 1.5em;
+    border-bottom: 1px solid rgb(241, 186, 255);
+
+}
+
+.auth {
+
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+
+    transform: translate(-50%, -40%);
+
+    color: white;
+    text-align: center;
+
+}
+
+.auth p {
+
+    font-size: 1.5em;
+    margin-bottom: 20px;
+
+}
+
+.auth button {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    width: 75%;
+    margin: auto;
+
+    padding: 12px;
+
+    background: rgb(238, 238, 238);
+    color: rgb(43, 43, 43);
+    font-size: 1.3em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+    transition: 0.5s;
+
+}
+
+.auth button:hover {
+
+    width: 78%;
+    padding: 16px;
+    background: rgb(189, 74, 255);
+    color: white !important;
+  
+}
+
+.room {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+    height: 180px;
+    padding: 2% 12px;
+
+    background: rgb(104, 69, 116);
+    color: white;
+
+    text-align: center;
+
+}
+
+.room label {
+
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+
+}
+
+.room input {
+
+    display: block;
+
+    width: 80%;
+    height: 40px;
+
+    margin: auto;
+    margin-bottom: 12px;
+    padding: 8px;
+
+}
+
+.room button {
+
+    width: 25%;
+    height: 35px;
+
+    border: 0;
+    outline: 0;
+
+    background-image: linear-gradient(144deg,#AF40FF, #9B42F3 50%,#9700EB);
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+
+    transition: 0.3s;
+
+}
+
+.room button:hover {
+
+    width: 28%;
+    height: 40px;
+
+}
+
+.chat {
+
+    width: 80%;
+    height: 100%;
+
+    margin: auto;
+    padding: 18px;
+
+}
+
+.chatHandler h1 {
+
+    padding: 10px;
+    font-weight: normal;
+    color: rgb(241, 186, 255); 
+    margin-bottom: 16px;
+
+}
+
+.chatHandler form {
+
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+
+    bottom: 20px;
+
+    width: 80%;
+    margin: auto;
+
+}
+
+.chatHandler form input {
+
+    width: 65%;
+    height: 50px;
+    padding: 6px;
+
+    background: linear-gradient(#5e4d5d, #5e4d5d) padding-box,
+    linear-gradient(144deg, #AF40FF, #9B42F3, #9700EB) border-box;
+    color: white;
+
+    outline: 0;
+    border: 0;
+
+   /* border-image: linear-gradient(#AF40FF, #9B42F3 50%,#9700EB) 1;*/
+    border: 2px solid transparent;
+    border-radius: 12px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.chatHandler form button {
+
+    width: 15%;
+    padding: 6px;
+
+    background: linear-gradient(#bd4bb5, #bd4bb5) padding-box,
+    linear-gradient(144deg, #9700EB, #9B42F3, #AF40FF) border-box;
+    color: white;
+    font-size: 1.3em;
+
+    outline: 0;
+    border: 2px solid transparent;
+
+    border-radius: 12px;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.chatHandler form button:hover {
+
+    font-size: 1.5em;
+
+}
+
+.message {
+    margin-bottom: 14px;
+}
+
+.messageHandler {
+
+    position: relative;
+    bottom: 45px;
+
+}
+
+.chatHandler .message p {
+
+    color: rgb(182, 182, 182);
+    margin-bottom: 4px;
+
+}
+
+.chatHandler .message span {
+
+    display: inline-block;
+
+    max-width: 300px;
+    padding: 8px;
+    word-break: break-all;
+
+    background: pink;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+
+}
+
+.own {
+    text-align: right;
+}
+
+.own span {
+    background: rgb(255, 51, 255) !important;
+    border-radius: 12px !important;
+    border-top-right-radius: 0 !important;
+}
